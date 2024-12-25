@@ -1,0 +1,121 @@
+api:
+  name: "PayloadTransformation"
+  version: "1.1.0"  # Updated to reflect changes
+  context: "/transform"
+  description: "Transforms payloads, performs namespace addition, and sends the transformed payload to a backend service."
+ 
+basePath: "/transform"
+host: "maxim-okapi.in.telstra.com.au"
+ 
+methods:
+  - method: "POST"
+    description: "Accepts a JSON payload, transforms it to XML, adds namespaces, and invokes a backend service."
+    request:
+      contentType: "application/json"
+      payload:
+        properties:
+          OrderNumber:
+            type: "string"
+            description: "The unique order number."
+          CustomerName:
+            type: "string"
+            description: "The name of the customer."
+          CustomerID:
+            type: "string"
+            description: "The ID of the customer."
+          RequestedDate:
+            type: "string"
+            description: "The requested date for the order."
+        required:
+          - OrderNumber
+          - CustomerName
+          - CustomerID
+          - RequestedDate
+    response:
+      contentType: "application/json"
+      payload:
+        properties:
+          OrderNumber:
+            type: "string"
+            description: "The unique order number returned after transformation."
+          CustomerName:
+            type: "string"
+            description: "The name of the customer from the backend."
+          CustomerID:
+            type: "string"
+            description: "The customer ID as returned by the backend."
+          RequestedDate:
+            type: "string"
+            description: "The requested date returned in the transformed payload."
+    endpoint:
+      name: "southboundEP"
+      url: "https://maxim-okapi.in.telstra.com.au/eai_okapiorder_enu/start.swe"
+      method: "POST"
+      timeout:
+        connectTimeout: 55000
+        responseTimeout: 55000
+ 
+transformations:
+  - name: "JSONToXML"
+    type: "payloadFactory"
+    description: "Converts incoming JSON to XML using a predefined format."
+    inputFields:
+      - "OrderNumber"
+      - "CustomerName"
+      - "CustomerID"
+      - "RequestedDate"
+  - name: "AddNamespaces"
+    type: "xslt"
+    key: "conf:/telstra/xslt/AddNamespaces.xslt"
+    description: "Adds necessary namespaces to the XML payload."
+  - name: "XMLToJSON"
+    type: "payloadFactory"
+    description: "Converts the backend XML response back to JSON format."
+    outputFields:
+      - "OrderNumber"
+      - "CustomerName"
+      - "CustomerID"
+      - "RequestedDate"
+ 
+logging:
+  - level: "custom"
+    steps:
+      - "Start transformation process"
+      - "Log the incoming JSON payload"
+      - "Log the transformed XML payload after namespace addition"
+      - "Log the cleaned backend response XML"
+      - "Log the final JSON payload before responding"
+ 
+faultHandling:
+  enabled: true
+  steps:
+    - log: "Capture and log fault details, including error codes and messages"
+    - respond: "Send an appropriate error response to the client with fault details"
+ 
+policies:
+  - name: "RateLimiting"
+    type: "spikeArrest"
+    description: "Limits incoming requests to prevent overloading."
+    rate: "10 requests per second"
+  - name: "ConcurrentConnections"
+    type: "concurrentRateLimit"
+    description: "Restricts the number of simultaneous backend connections."
+    maxConnections: 20
+  - name: "ErrorHandler"
+    type: "faultSequence"
+    description: "Handles errors gracefully by logging and responding with fault details."
+ 
+ssl:
+  enabled: true
+  clientAuth: true
+  keyStore: "maxim-okapi.in.telstra.com.au.client"
+  keyAlias: "maxim-okapi.in.telstra.com.au.client.key"
+  protocols:
+    - "TLSv1.2"
+    - "TLSv1.3"
+ 
+metadata:
+  createdBy: "f1801330@team.telstra.com"
+  lastModifiedBy: "f1801330@team.telstra.com"
+  createdAt: "2024-12-25T18:00:00Z"
+  lastModifiedAt: "2024-12-26T12:00:00Z"

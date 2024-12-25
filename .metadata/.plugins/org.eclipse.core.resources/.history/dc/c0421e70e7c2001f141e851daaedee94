@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/ratelimit" name="RLAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <log description="api start log" level="custom">
+                <property name="RLAPIStartLog" value="******************* Start rate limiting flow ************************"/>
+            </log>
+            <throttle id="spikeArrest">
+                <policy>
+                    <wsp:Policy wsu:id="WSO2MediatorThrottlingPolicy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                        <throttle:MediatorThrottleAssertion xmlns:throttle="http://www.wso2.org/products/wso2commons/throttle">
+                            <throttle:MaximumConcurrentAccess>0</throttle:MaximumConcurrentAccess>
+                            <wsp:Policy>
+                                <throttle:ID throttle:type="IP">other</throttle:ID>
+                                <wsp:Policy>
+                                    <throttle:Control>
+                                        <wsp:Policy>
+                                            <throttle:MaximumCount>10</throttle:MaximumCount>
+                                            <throttle:UnitTime>60000</throttle:UnitTime>
+                                            <throttle:ProhibitTimePeriod>30000</throttle:ProhibitTimePeriod>
+                                        </wsp:Policy>
+                                    </throttle:Control>
+                                </wsp:Policy>
+                            </wsp:Policy>
+                        </throttle:MediatorThrottleAssertion>
+                    </wsp:Policy>
+                </policy>
+                <onReject>
+                    <sequence key="failedPostSeq"/>
+                </onReject>
+                <onAccept>
+                    <sequence key="postSuccessSeq"/>
+                </onAccept>
+            </throttle>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

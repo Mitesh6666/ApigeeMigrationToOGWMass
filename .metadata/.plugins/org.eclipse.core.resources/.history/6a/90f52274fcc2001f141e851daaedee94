@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/transform" name="PayloadTransformation" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <!-- Start Logging -->
+            <log level="custom">
+                <property name="PTAPIStartLog" value="******* Start Payload Transformation Flow ********"/>
+            </log>
+            <!-- Convert Incoming JSON to XML -->
+            <payloadFactory media-type="xml">
+                <format>
+                    <OrderDetails>
+                        <OrderNumber>$1</OrderNumber>
+                        <CustomerName>$2</CustomerName>
+                        <CustomerID>$3</CustomerID>
+                        <RequestedDate>$4</RequestedDate>
+                    </OrderDetails>
+                </format>
+                <args>
+                    <arg evaluator="json" expression="$.OrderNumber"/>
+                    <arg evaluator="json" expression="$.CustomerName"/>
+                    <arg evaluator="json" expression="$.CustomerID"/>
+                    <arg evaluator="json" expression="$.RequestedDate"/>
+                </args>
+            </payloadFactory>
+            <!-- Add Namespaces to XML -->
+            <xslt description="AddNamespaceXSLT" key="conf:AddNamespaces.xslt"/>
+            <!-- Log Transformed Payload -->
+            <log level="custom">
+                <property name="Transformed XML" value="******* Transformed Payload ********"/>
+            </log>
+            <!-- Set Backend Endpoint URL -->
+            <property name="uri.var.southboundEndpoint" scope="default" type="STRING" value="https://maxim-okapi.in.telstra.com.au/eai_okapiorder_enu/start.swe?SWEExtSource=WebService&amp;SWEExtCmd=Execute&amp;WSSOAP=1"/>
+            <!-- Call Target System -->
+            <call>
+                <endpoint key="southboundEP"/>
+            </call>
+            <!-- Remove Namespaces from Backend Response -->
+            <xslt key="conf:/telstra/xslt/RemoveNamespaces.xslt"/>
+            <!-- Log Cleaned Response -->
+            <log level="custom">
+                <property name="Cleaned XML" value="******* XML Cleaned ********"/>
+            </log>
+            <!-- Convert XML Response to JSON -->
+            <payloadFactory media-type="json">
+                <format>
+                    {
+                        "OrderNumber": "$1",
+                        "CustomerName": "$2",
+                        "CustomerID": "$3",
+                        "RequestedDate": "$4"
+                    }
+</format>
+                <args>
+                    <arg evaluator="xml" expression="//OrderDetails/OrderNumber"/>
+                    <arg evaluator="xml" expression="//OrderDetails/CustomerName"/>
+                    <arg evaluator="xml" expression="//OrderDetails/CustomerID"/>
+                    <arg evaluator="xml" expression="//OrderDetails/RequestedDate"/>
+                </args>
+            </payloadFactory>
+            <!-- Log Final JSON Payload -->
+            <log level="custom">
+                <property name="FinalJSONPayload" value="******* Final JSON Payload ********"/>
+            </log>
+            <!-- Respond Back to Client -->
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence>
+            <log level="custom">
+                <property name="FaultLog" value="Error occurred in API flow"/>
+            </log>
+            <respond/>
+        </faultSequence>
+    </resource>
+</api>
