@@ -1,0 +1,93 @@
+api:
+  name: "PayloadTransformation"
+  version: "1.0.0"
+  context: "/transform"
+  description: "Transforms payloads, performs namespace addition, and sends the transformed payload to a backend service."
+ 
+basePath: "/transform"
+host: "maxim-okapi.in.telstra.com.au"
+ 
+methods:
+  - method: "POST"
+    description: "Accepts a JSON payload, transforms it to XML, adds namespaces, and invokes a backend service."
+    request:
+      contentType: "application/json"
+      payload:
+        properties:
+          OrderNumber:
+            type: "string"
+            description: "The unique order number."
+          CustomerName:
+            type: "string"
+            description: "The name of the customer."
+          CustomerID:
+            type: "string"
+            description: "The ID of the customer."
+          RequestedDate:
+            type: "string"
+            description: "The requested date for the order."
+        required:
+          - OrderNumber
+          - CustomerName
+          - CustomerID
+          - RequestedDate
+    response:
+      contentType: "application/json"
+      payload:
+        properties:
+          OrderNumber:
+            type: "string"
+          CustomerName:
+            type: "string"
+          CustomerID:
+            type: "string"
+          RequestedDate:
+            type: "string"
+    endpoint:
+      name: "southboundEP"
+      url: "https://maxim-okapi.in.telstra.com.au/eai_okapiorder_enu/start.swe"
+      method: "POST"
+ 
+transformations:
+  - name: "JSONToXML"
+    type: "payloadFactory"
+    description: "Converts incoming JSON to XML."
+  - name: "AddNamespaces"
+    type: "xslt"
+    key: "conf:/telstra/xslt/AddNamespaces.xslt"
+  - name: "XMLToJSON"
+    type: "payloadFactory"
+    description: "Converts the backend XML response back to JSON."
+ 
+logging:
+  - level: "custom"
+    steps:
+      - "Start transformation process"
+      - "Log transformed XML"
+      - "Log cleaned XML response"
+      - "Log final JSON payload"
+ 
+faultHandling:
+  enabled: true
+  steps:
+    - log: "Log the fault details"
+    - respond: "Send error response to client"
+ 
+timeout:
+  connectTimeout: 55000
+  responseTimeout: 55000
+ 
+policies:
+  - name: "RateLimiting"
+    type: "spikeArrest"
+    rate: "10 requests per second"
+  - name: "ErrorHandler"
+    type: "faultSequence"
+ 
+ssl:
+  enabled: true
+  clientAuth: true
+  keyStore: "maxim-okapi.in.telstra.com.au.client"
+  keyAlias: "maxim-okapi.in.telstra.com.au.client.key"
+
+⁠⁠⁠⁠⁠⁠⁠

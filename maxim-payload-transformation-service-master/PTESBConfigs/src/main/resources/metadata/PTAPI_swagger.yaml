@@ -1,0 +1,60 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "Payload Transformation API"
+  description: "Transforms payloads and retrieves Order Details."
+ 
+host: "maxim-okapi.in.telstra.com.au"
+basePath: "/transform"
+schemes:
+  - "https"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+ 
+paths:
+  /:
+    post:
+      summary: "Transform Payload"
+      description: |
+        Accepts a JSON payload, converts it to XML, enriches it with namespaces, 
+        calls a backend service, and converts the response back to JSON.
+      parameters:
+        - name: "body"
+          in: "body"
+          required: true
+          schema:
+            type: "object"
+            properties:
+              OrderNumber:
+                type: "string"
+              CustomerName:
+                type: "string"
+              CustomerID:
+                type: "string"
+              RequestedDate:
+                type: "string"
+            required:
+              - OrderNumber
+              - CustomerName
+              - CustomerID
+              - RequestedDate
+      responses:
+        "200":
+          description: "Transformed response returned from the backend"
+          schema:
+            type: "object"
+            properties:
+              OrderNumber:
+                type: "string"
+              CustomerName:
+                type: "string"
+              CustomerID:
+                type: "string"
+              RequestedDate:
+                type: "string"
+        "400":
+          description: "Invalid input"
+        "500":
+          description: "Internal server error"
