@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.telstra</groupId>
+    <artifactId>PTESBConfigs</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.telstra</groupId>
+  <artifactId>PTESBConfigs_module</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>PTESBConfigs_module</name>
+  <description>PTESBConfigs_module</description>
+  <modules>
+    <module>api/PTAPI</module>
+    <module>metadata/PTAPI_swagger</module>
+    <module>metadata/PTAPI_metadata</module>
+    <module>endpoints/southboundEP</module>
+  </modules>
+</project>

@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/integrationstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_WDf1UL2PEe-v--tlS-PLQg" type="Esb" name="postSuccessSeq" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_WJNbwL2PEe-v--tlS-PLQg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_WJOC0L2PEe-v--tlS-PLQg" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_ZEnc8L2PEe-v--tlS-PLQg" type="3614">
+        <children xmi:type="notation:Node" xmi:id="_ZEqgQL2PEe-v--tlS-PLQg" type="3615">
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZEqgRb2PEe-v--tlS-PLQg" type="7035">
+            <children xmi:type="notation:Node" xmi:id="_ZE8NEL2PEe-v--tlS-PLQg" type="3495">
+              <children xmi:type="notation:DecorationNode" xmi:id="_ZE8NFb2PEe-v--tlS-PLQg" type="5168"/>
+              <children xmi:type="notation:Node" xmi:id="_ZFOg8L2PEe-v--tlS-PLQg" type="3018">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZFOg8b2PEe-v--tlS-PLQg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_ZFOg8r2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_ZFOg872PEe-v--tlS-PLQg"/>
+                <element xmi:type="esb:LogMediatorInputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.0/@inputConnector"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZFOg9L2PEe-v--tlS-PLQg" x="-6" y="-5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_ZFOg9b2PEe-v--tlS-PLQg" type="3019">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZFOg9r2PEe-v--tlS-PLQg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_ZFOg972PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_ZFOg-L2PEe-v--tlS-PLQg"/>
+                <element xmi:type="esb:LogMediatorOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.0/@outputConnector"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZFOg-b2PEe-v--tlS-PLQg" x="64" y="-9"/>
+              </children>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZE8NEb2PEe-v--tlS-PLQg"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_ZE8NEr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_ZE8NE72PEe-v--tlS-PLQg"/>
+              <element xmi:type="esb:LogMediator" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.0"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZE8NFL2PEe-v--tlS-PLQg" x="25" y="89" width="84" height="115"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ZFYR8L2PEe-v--tlS-PLQg" type="3492">
+              <children xmi:type="notation:DecorationNode" xmi:id="_ZFY5AL2PEe-v--tlS-PLQg" type="5167"/>
+              <children xmi:type="notation:Node" xmi:id="_ZFm7cL2PEe-v--tlS-PLQg" type="3033">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZFm7cb2PEe-v--tlS-PLQg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_ZFm7cr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_ZFm7c72PEe-v--tlS-PLQg"/>
+                <element xmi:type="esb:PropertyMediatorInputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.1/@inputConnector"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZFnigL2PEe-v--tlS-PLQg" x="-6" y="-5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_ZFnigb2PEe-v--tlS-PLQg" type="3034">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZFnigr2PEe-v--tlS-PLQg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_ZFnig72PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_ZFnihL2PEe-v--tlS-PLQg"/>
+                <element xmi:type="esb:PropertyMediatorOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.1/@outputConnector"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZFnihb2PEe-v--tlS-PLQg" x="64" y="-9"/>
+              </children>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZFYR8b2PEe-v--tlS-PLQg"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_ZFYR8r2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_ZFYR872PEe-v--tlS-PLQg"/>
+              <element xmi:type="esb:PropertyMediator" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.1"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZFYR9L2PEe-v--tlS-PLQg" x="149" y="89" width="84" height="115"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ZGHRwL2PEe-v--tlS-PLQg" type="3506">
+              <children xmi:type="notation:DecorationNode" xmi:id="_ZGHRxb2PEe-v--tlS-PLQg" type="5173"/>
+              <children xmi:type="notation:Node" xmi:id="_ZGpdQL2PEe-v--tlS-PLQg" type="3058">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZGpdQb2PEe-v--tlS-PLQg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_ZGpdQr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_ZGpdQ72PEe-v--tlS-PLQg"/>
+                <element xmi:type="esb:ClassMediatorInputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.2/@inputConnector"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZGpdRL2PEe-v--tlS-PLQg" x="-6" y="-5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_ZGpdRb2PEe-v--tlS-PLQg" type="3059">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZGpdRr2PEe-v--tlS-PLQg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_ZGpdR72PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_ZGpdSL2PEe-v--tlS-PLQg"/>
+                <element xmi:type="esb:ClassMediatorOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.2/@outputConnector"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZGpdSb2PEe-v--tlS-PLQg" x="64" y="-9"/>
+              </children>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZGHRwb2PEe-v--tlS-PLQg"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_ZGHRwr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_ZGHRw72PEe-v--tlS-PLQg"/>
+              <element xmi:type="esb:ClassMediator" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.2"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZGHRxL2PEe-v--tlS-PLQg" x="273" y="89" width="84" height="115"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ZHGwQL2PEe-v--tlS-PLQg" type="3498">
+              <children xmi:type="notation:Node" xmi:id="_ZH8dwL2PEe-v--tlS-PLQg" type="3042">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZH8dwb2PEe-v--tlS-PLQg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_ZH8dwr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_ZH8dw72PEe-v--tlS-PLQg"/>
+                <element xmi:type="esb:SwitchMediatorInputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@inputConnector"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZH8dxL2PEe-v--tlS-PLQg" x="-6" y="-5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_ZH9E0L2PEe-v--tlS-PLQg" type="3499">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZH9E0b2PEe-v--tlS-PLQg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_ZH9E0r2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_ZH9E072PEe-v--tlS-PLQg"/>
+                <element xmi:type="esb:SwitchMediatorOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@outputConnector"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZH9E1L2PEe-v--tlS-PLQg"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_ZH9E1b2PEe-v--tlS-PLQg" type="3043">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZH9E1r2PEe-v--tlS-PLQg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_ZH9E172PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_ZH9E2L2PEe-v--tlS-PLQg"/>
+                <element xmi:type="esb:SwitchCaseBranchOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@caseBranches.0"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZH9E2b2PEe-v--tlS-PLQg" x="80" y="-34"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_ZH9r4L2PEe-v--tlS-PLQg" type="3044">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZH9r4b2PEe-v--tlS-PLQg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_ZH9r4r2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_ZH9r472PEe-v--tlS-PLQg"/>
+                <element xmi:type="esb:SwitchDefaultBranchOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@defaultBranch"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZH9r5L2PEe-v--tlS-PLQg" x="80" y="16"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_ZH-S8L2PEe-v--tlS-PLQg" type="3500">
+                <children xmi:type="notation:Node" xmi:id="_ZImlEL2PEe-v--tlS-PLQg" type="3732">
+                  <children xmi:type="notation:Node" xmi:id="_ZIyyUL2PEe-v--tlS-PLQg" type="3733">
+                    <children xmi:type="notation:Node" xmi:id="_ZI9xcL2PEe-v--tlS-PLQg" type="3502">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_ZI9xdb2PEe-v--tlS-PLQg" type="7015">
+                        <children xmi:type="notation:Node" xmi:id="_ZL2GUL2PEe-v--tlS-PLQg" type="3493">
+                          <children xmi:type="notation:DecorationNode" xmi:id="_ZL2GVb2PEe-v--tlS-PLQg" type="5128"/>
+                          <children xmi:type="notation:Node" xmi:id="_ZMAeYL2PEe-v--tlS-PLQg" type="3121">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZMAeYb2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZMAeYr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZMAeY72PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:ThrottleMediatorInputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.0/@mediatorFlow/@children.0/@inputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZMAeZL2PEe-v--tlS-PLQg" x="-6" y="-5"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_ZMAeZb2PEe-v--tlS-PLQg" type="3122">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZMAeZr2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZMAeZ72PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZMAeaL2PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:ThrottleMediatorOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.0/@mediatorFlow/@children.0/@outputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZMAeab2PEe-v--tlS-PLQg" x="-11" y="-9"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_ZMBFcL2PEe-v--tlS-PLQg" type="3581">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZMBFcb2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZMBFcr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZMBFc72PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:ThrottleMediatorOnAcceptOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.0/@mediatorFlow/@children.0/@onAcceptOutputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZMBFdL2PEe-v--tlS-PLQg"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_ZMBFdb2PEe-v--tlS-PLQg" type="3582">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZMBsgL2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZMBsgb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZMBsgr2PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:ThrottleMediatorOnRejectOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.0/@mediatorFlow/@children.0/@onRejectOutputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZMBsg72PEe-v--tlS-PLQg"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_ZMBshL2PEe-v--tlS-PLQg" type="3583">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZMBshb2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZMBshr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZMBsh72PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:ThrottleContainer" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.0/@mediatorFlow/@children.0/@throttleContainer"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZMBsiL2PEe-v--tlS-PLQg"/>
+                          </children>
+                          <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZL2GUb2PEe-v--tlS-PLQg"/>
+                          <styles xmi:type="notation:FontStyle" xmi:id="_ZL2GUr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                          <styles xmi:type="notation:LineStyle" xmi:id="_ZL2GU72PEe-v--tlS-PLQg"/>
+                          <element xmi:type="esb:ThrottleMediator" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.0/@mediatorFlow/@children.0"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZL2GVL2PEe-v--tlS-PLQg" x="25" y="10" width="170" height="130"/>
+                        </children>
+                      </children>
+                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZI9xcb2PEe-v--tlS-PLQg"/>
+                      <styles xmi:type="notation:FontStyle" xmi:id="_ZI9xcr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                      <styles xmi:type="notation:LineStyle" xmi:id="_ZI9xc72PEe-v--tlS-PLQg"/>
+                      <element xmi:type="esb:MediatorFlow" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.0/@mediatorFlow"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZI9xdL2PEe-v--tlS-PLQg"/>
+                    </children>
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZIyyUb2PEe-v--tlS-PLQg"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_ZIyyUr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_ZIyyU72PEe-v--tlS-PLQg"/>
+                    <element xmi:type="esb:SwitchCaseContainer" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.0"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZIyyVL2PEe-v--tlS-PLQg"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_ZOyFkL2PEe-v--tlS-PLQg" type="3733">
+                    <children xmi:type="notation:Node" xmi:id="_ZO2-EL2PEe-v--tlS-PLQg" type="3502">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_ZO3lIL2PEe-v--tlS-PLQg" type="7015">
+                        <children xmi:type="notation:Node" xmi:id="_ZPG1sL2PEe-v--tlS-PLQg" type="3493">
+                          <children xmi:type="notation:DecorationNode" xmi:id="_ZPID0L2PEe-v--tlS-PLQg" type="5128"/>
+                          <children xmi:type="notation:Node" xmi:id="_ZPPYkL2PEe-v--tlS-PLQg" type="3121">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZPPYkb2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZPPYkr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZPPYk72PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:ThrottleMediatorInputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.1/@mediatorFlow/@children.0/@inputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZPPYlL2PEe-v--tlS-PLQg" x="-6" y="-5"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_ZPP_oL2PEe-v--tlS-PLQg" type="3122">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZPP_ob2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZPP_or2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZPP_o72PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:ThrottleMediatorOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.1/@mediatorFlow/@children.0/@outputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZPP_pL2PEe-v--tlS-PLQg" x="-11" y="-9"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_ZPP_pb2PEe-v--tlS-PLQg" type="3581">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZPP_pr2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZPP_p72PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZPP_qL2PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:ThrottleMediatorOnAcceptOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.1/@mediatorFlow/@children.0/@onAcceptOutputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZPP_qb2PEe-v--tlS-PLQg"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_ZPQmsL2PEe-v--tlS-PLQg" type="3582">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZPQmsb2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZPQmsr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZPQms72PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:ThrottleMediatorOnRejectOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.1/@mediatorFlow/@children.0/@onRejectOutputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZPQmtL2PEe-v--tlS-PLQg"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_ZPQmtb2PEe-v--tlS-PLQg" type="3583">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZPQmtr2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZPQmt72PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZPQmuL2PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:ThrottleContainer" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.1/@mediatorFlow/@children.0/@throttleContainer"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZPQmub2PEe-v--tlS-PLQg"/>
+                          </children>
+                          <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZPG1sb2PEe-v--tlS-PLQg"/>
+                          <styles xmi:type="notation:FontStyle" xmi:id="_ZPG1sr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                          <styles xmi:type="notation:LineStyle" xmi:id="_ZPG1s72PEe-v--tlS-PLQg"/>
+                          <element xmi:type="esb:ThrottleMediator" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.1/@mediatorFlow/@children.0"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZPG1tL2PEe-v--tlS-PLQg" x="25" y="10" width="170" height="130"/>
+                        </children>
+                      </children>
+                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZO2-Eb2PEe-v--tlS-PLQg"/>
+                      <styles xmi:type="notation:FontStyle" xmi:id="_ZO2-Er2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                      <styles xmi:type="notation:LineStyle" xmi:id="_ZO2-E72PEe-v--tlS-PLQg"/>
+                      <element xmi:type="esb:MediatorFlow" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.1/@mediatorFlow"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZO2-FL2PEe-v--tlS-PLQg"/>
+                    </children>
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZOyFkb2PEe-v--tlS-PLQg"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_ZOyFkr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_ZOyFk72PEe-v--tlS-PLQg"/>
+                    <element xmi:type="esb:SwitchCaseContainer" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.1"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZOyFlL2PEe-v--tlS-PLQg"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_ZRSnAL2PEe-v--tlS-PLQg" type="3733">
+                    <children xmi:type="notation:Node" xmi:id="_ZRVDQL2PEe-v--tlS-PLQg" type="3502">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_ZRVqUL2PEe-v--tlS-PLQg" type="7015">
+                        <children xmi:type="notation:Node" xmi:id="_ZRlh8L2PEe-v--tlS-PLQg" type="3493">
+                          <children xmi:type="notation:DecorationNode" xmi:id="_ZRlh9b2PEe-v--tlS-PLQg" type="5128"/>
+                          <children xmi:type="notation:Node" xmi:id="_ZRtdwL2PEe-v--tlS-PLQg" type="3121">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZRtdwb2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZRtdwr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZRtdw72PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:ThrottleMediatorInputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.2/@mediatorFlow/@children.0/@inputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZRtdxL2PEe-v--tlS-PLQg" x="-6" y="-5"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_ZRtdxb2PEe-v--tlS-PLQg" type="3122">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZRtdxr2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZRtdx72PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZRtdyL2PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:ThrottleMediatorOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.2/@mediatorFlow/@children.0/@outputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZRtdyb2PEe-v--tlS-PLQg" x="-11" y="-9"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_ZRuE0L2PEe-v--tlS-PLQg" type="3581">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZRuE0b2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZRuE0r2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZRuE072PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:ThrottleMediatorOnAcceptOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.2/@mediatorFlow/@children.0/@onAcceptOutputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZRuE1L2PEe-v--tlS-PLQg"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_ZRuE1b2PEe-v--tlS-PLQg" type="3582">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZRuE1r2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZRuE172PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZRuE2L2PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:ThrottleMediatorOnRejectOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.2/@mediatorFlow/@children.0/@onRejectOutputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZRuE2b2PEe-v--tlS-PLQg"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_ZRuE2r2PEe-v--tlS-PLQg" type="3583">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZRuE272PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZRuE3L2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZRuE3b2PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:ThrottleContainer" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.2/@mediatorFlow/@children.0/@throttleContainer"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZRuE3r2PEe-v--tlS-PLQg"/>
+                          </children>
+                          <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZRlh8b2PEe-v--tlS-PLQg"/>
+                          <styles xmi:type="notation:FontStyle" xmi:id="_ZRlh8r2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                          <styles xmi:type="notation:LineStyle" xmi:id="_ZRlh872PEe-v--tlS-PLQg"/>
+                          <element xmi:type="esb:ThrottleMediator" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.2/@mediatorFlow/@children.0"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZRlh9L2PEe-v--tlS-PLQg" x="25" y="10" width="170" height="130"/>
+                        </children>
+                      </children>
+                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZRVDQb2PEe-v--tlS-PLQg"/>
+                      <styles xmi:type="notation:FontStyle" xmi:id="_ZRVDQr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                      <styles xmi:type="notation:LineStyle" xmi:id="_ZRVDQ72PEe-v--tlS-PLQg"/>
+                      <element xmi:type="esb:MediatorFlow" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.2/@mediatorFlow"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZRVDRL2PEe-v--tlS-PLQg"/>
+                    </children>
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZRSnAb2PEe-v--tlS-PLQg"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_ZRSnAr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_ZRSnA72PEe-v--tlS-PLQg"/>
+                    <element xmi:type="esb:SwitchCaseContainer" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.2"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZRSnBL2PEe-v--tlS-PLQg"/>
+                  </children>
+                  <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZImlEb2PEe-v--tlS-PLQg"/>
+                  <styles xmi:type="notation:FontStyle" xmi:id="_ZImlEr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                  <styles xmi:type="notation:LineStyle" xmi:id="_ZImlE72PEe-v--tlS-PLQg"/>
+                  <element xmi:type="esb:SwitchCaseParentContainer" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZImlFL2PEe-v--tlS-PLQg"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_ZInMIL2PEe-v--tlS-PLQg" type="3734">
+                  <children xmi:type="notation:Node" xmi:id="_ZJbrgL2PEe-v--tlS-PLQg" type="3735">
+                    <children xmi:type="notation:Node" xmi:id="_ZJn4wL2PEe-v--tlS-PLQg" type="3528">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_ZJn4xb2PEe-v--tlS-PLQg" type="7017">
+                        <children xmi:type="notation:Node" xmi:id="_ZKTOML2PEe-v--tlS-PLQg" type="3495">
+                          <children xmi:type="notation:DecorationNode" xmi:id="_ZKTONb2PEe-v--tlS-PLQg" type="5168"/>
+                          <children xmi:type="notation:Node" xmi:id="_ZKc_ML2PEe-v--tlS-PLQg" type="3018">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZKc_Mb2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZKc_Mr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZKc_M72PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:LogMediatorInputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchDefaultParentContainer/@switchDefaultContainer/@mediatorFlow/@children.0/@inputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZKc_NL2PEe-v--tlS-PLQg" x="-6" y="-5"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_ZKc_Nb2PEe-v--tlS-PLQg" type="3019">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZKc_Nr2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZKc_N72PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZKc_OL2PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:LogMediatorOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchDefaultParentContainer/@switchDefaultContainer/@mediatorFlow/@children.0/@outputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZKc_Ob2PEe-v--tlS-PLQg" x="64" y="-9"/>
+                          </children>
+                          <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZKTOMb2PEe-v--tlS-PLQg"/>
+                          <styles xmi:type="notation:FontStyle" xmi:id="_ZKTOMr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                          <styles xmi:type="notation:LineStyle" xmi:id="_ZKTOM72PEe-v--tlS-PLQg"/>
+                          <element xmi:type="esb:LogMediator" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchDefaultParentContainer/@switchDefaultContainer/@mediatorFlow/@children.0"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZKTONL2PEe-v--tlS-PLQg" x="25" y="10" width="84" height="115"/>
+                        </children>
+                        <children xmi:type="notation:Node" xmi:id="_ZKxIQL2PEe-v--tlS-PLQg" type="3597">
+                          <children xmi:type="notation:DecorationNode" xmi:id="_ZKxIRb2PEe-v--tlS-PLQg" type="5191"/>
+                          <children xmi:type="notation:Node" xmi:id="_ZLA_4L2PEe-v--tlS-PLQg" type="3598">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZLA_4b2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZLA_4r2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZLA_472PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:PayloadFactoryMediatorInputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchDefaultParentContainer/@switchDefaultContainer/@mediatorFlow/@children.1/@inputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZLA_5L2PEe-v--tlS-PLQg" x="-6" y="-5"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_ZLBm8L2PEe-v--tlS-PLQg" type="3599">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZLBm8b2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZLBm8r2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZLBm872PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:PayloadFactoryMediatorOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchDefaultParentContainer/@switchDefaultContainer/@mediatorFlow/@children.1/@outputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZLBm9L2PEe-v--tlS-PLQg" x="64" y="-9"/>
+                          </children>
+                          <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZKxIQb2PEe-v--tlS-PLQg"/>
+                          <styles xmi:type="notation:FontStyle" xmi:id="_ZKxIQr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                          <styles xmi:type="notation:LineStyle" xmi:id="_ZKxIQ72PEe-v--tlS-PLQg"/>
+                          <element xmi:type="esb:PayloadFactoryMediator" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchDefaultParentContainer/@switchDefaultContainer/@mediatorFlow/@children.1"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZKxIRL2PEe-v--tlS-PLQg" x="149" y="10" width="84" height="115"/>
+                        </children>
+                        <children xmi:type="notation:Node" xmi:id="_ZLUh4L2PEe-v--tlS-PLQg" type="3739">
+                          <children xmi:type="notation:DecorationNode" xmi:id="_ZLVI8L2PEe-v--tlS-PLQg" type="5209"/>
+                          <children xmi:type="notation:Node" xmi:id="_ZLmOsL2PEe-v--tlS-PLQg" type="3740">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZLmOsb2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZLmOsr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZLmOs72PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:RespondMediatorInputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchDefaultParentContainer/@switchDefaultContainer/@mediatorFlow/@children.2/@inputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZLmOtL2PEe-v--tlS-PLQg" x="-6" y="-5"/>
+                          </children>
+                          <children xmi:type="notation:Node" xmi:id="_ZLmOtb2PEe-v--tlS-PLQg" type="3741">
+                            <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZLmOtr2PEe-v--tlS-PLQg"/>
+                            <styles xmi:type="notation:FontStyle" xmi:id="_ZLmOt72PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                            <styles xmi:type="notation:LineStyle" xmi:id="_ZLmOuL2PEe-v--tlS-PLQg"/>
+                            <element xmi:type="esb:RespondMediatorOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchDefaultParentContainer/@switchDefaultContainer/@mediatorFlow/@children.2/@outputConnector"/>
+                            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZLmOub2PEe-v--tlS-PLQg" x="64" y="-9"/>
+                          </children>
+                          <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZLUh4b2PEe-v--tlS-PLQg"/>
+                          <styles xmi:type="notation:FontStyle" xmi:id="_ZLUh4r2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                          <styles xmi:type="notation:LineStyle" xmi:id="_ZLUh472PEe-v--tlS-PLQg"/>
+                          <element xmi:type="esb:RespondMediator" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchDefaultParentContainer/@switchDefaultContainer/@mediatorFlow/@children.2"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZLUh5L2PEe-v--tlS-PLQg" x="273" y="10" width="84" height="115"/>
+                        </children>
+                      </children>
+                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZJn4wb2PEe-v--tlS-PLQg"/>
+                      <styles xmi:type="notation:FontStyle" xmi:id="_ZJn4wr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                      <styles xmi:type="notation:LineStyle" xmi:id="_ZJn4w72PEe-v--tlS-PLQg"/>
+                      <element xmi:type="esb:MediatorFlow" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchDefaultParentContainer/@switchDefaultContainer/@mediatorFlow"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZJn4xL2PEe-v--tlS-PLQg"/>
+                    </children>
+                    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZJbrgb2PEe-v--tlS-PLQg"/>
+                    <styles xmi:type="notation:FontStyle" xmi:id="_ZJbrgr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                    <styles xmi:type="notation:LineStyle" xmi:id="_ZJbrg72PEe-v--tlS-PLQg"/>
+                    <element xmi:type="esb:SwitchDefaultContainer" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchDefaultParentContainer/@switchDefaultContainer"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZJbrhL2PEe-v--tlS-PLQg"/>
+                  </children>
+                  <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZInMIb2PEe-v--tlS-PLQg"/>
+                  <styles xmi:type="notation:FontStyle" xmi:id="_ZInMIr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                  <styles xmi:type="notation:LineStyle" xmi:id="_ZInMI72PEe-v--tlS-PLQg"/>
+                  <element xmi:type="esb:SwitchDefaultParentContainer" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchDefaultParentContainer"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZInMJL2PEe-v--tlS-PLQg"/>
+                </children>
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZH-S8b2PEe-v--tlS-PLQg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_ZH-S8r2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_ZH-S872PEe-v--tlS-PLQg"/>
+                <element xmi:type="esb:SwitchMediatorContainer" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZH-S9L2PEe-v--tlS-PLQg"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_ZPAvEL2PEe-v--tlS-PLQg" type="3043">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZPAvEb2PEe-v--tlS-PLQg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_ZPAvEr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_ZPAvE72PEe-v--tlS-PLQg"/>
+                <element xmi:type="esb:SwitchCaseBranchOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@caseBranches.1"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZPAvFL2PEe-v--tlS-PLQg"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_ZRc_EL2PEe-v--tlS-PLQg" type="3043">
+                <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZRc_Eb2PEe-v--tlS-PLQg"/>
+                <styles xmi:type="notation:FontStyle" xmi:id="_ZRc_Er2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+                <styles xmi:type="notation:LineStyle" xmi:id="_ZRc_E72PEe-v--tlS-PLQg"/>
+                <element xmi:type="esb:SwitchCaseBranchOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@caseBranches.2"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZRc_FL2PEe-v--tlS-PLQg"/>
+              </children>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZHGwQb2PEe-v--tlS-PLQg"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_ZHGwQr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_ZHGwQ72PEe-v--tlS-PLQg"/>
+              <element xmi:type="esb:SwitchMediator" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZHGwRL2PEe-v--tlS-PLQg" x="397" y="89" width="170" height="130"/>
+            </children>
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ZEqgRr2PEe-v--tlS-PLQg" showTitle="true"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZEqgQb2PEe-v--tlS-PLQg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ZEqgQr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_ZEqgQ72PEe-v--tlS-PLQg"/>
+          <element xmi:type="esb:MediatorFlow" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZEqgRL2PEe-v--tlS-PLQg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ZErHUL2PEe-v--tlS-PLQg" type="3616">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZErHUb2PEe-v--tlS-PLQg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ZErHUr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_ZErHU72PEe-v--tlS-PLQg"/>
+          <element xmi:type="esb:SequencesInputConnector" href="postSuccessSeq.esb#//@server/@children.0/@inputConnector"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZErHVL2PEe-v--tlS-PLQg" x="-11" y="-9"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ZErHVb2PEe-v--tlS-PLQg" type="3617">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZErHVr2PEe-v--tlS-PLQg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ZErHV72PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_ZErHWL2PEe-v--tlS-PLQg"/>
+          <element xmi:type="esb:SequencesOutputConnector" href="postSuccessSeq.esb#//@server/@children.0/@outputConnector"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZErHWb2PEe-v--tlS-PLQg" x="-11" y="-9"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZEnc8b2PEe-v--tlS-PLQg"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_ZEnc8r2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_ZEnc872PEe-v--tlS-PLQg"/>
+        <element xmi:type="esb:Sequences" href="postSuccessSeq.esb#//@server/@children.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZEnc9L2PEe-v--tlS-PLQg" width="195" height="125"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_WJNbwb2PEe-v--tlS-PLQg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_WJNbwr2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_WJNbw72PEe-v--tlS-PLQg"/>
+    <element xmi:type="esb:EsbServer" href="postSuccessSeq.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WJNbxL2PEe-v--tlS-PLQg"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_WDf1Ub2PEe-v--tlS-PLQg"/>
+  <element xmi:type="esb:EsbDiagram" href="postSuccessSeq.esb#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_ZUz1EL2PEe-v--tlS-PLQg" type="4001" source="_ZH9r4L2PEe-v--tlS-PLQg" target="_ZKc_ML2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZUz1Eb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@defaultBranch/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZUz1Er2PEe-v--tlS-PLQg" points="[11, -8, -5, 0]$[10, -5, -6, 3]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZU-0ML2PEe-v--tlS-PLQg" type="4001" source="_ZKc_Nb2PEe-v--tlS-PLQg" target="_ZLA_4L2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZU-0Mb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchDefaultParentContainer/@switchDefaultContainer/@mediatorFlow/@children.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZU-0Mr2PEe-v--tlS-PLQg" points="[-11, 0, 69, 0]$[-74, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZVHXEL2PEe-v--tlS-PLQg" type="4001" source="_ZLBm8L2PEe-v--tlS-PLQg" target="_ZLmOsL2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZVHXEb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchDefaultParentContainer/@switchDefaultContainer/@mediatorFlow/@children.1/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZVHXEr2PEe-v--tlS-PLQg" points="[-11, 0, 69, 0]$[-74, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZVPS4L2PEe-v--tlS-PLQg" type="4001" source="_ZMBFcL2PEe-v--tlS-PLQg" target="_ZNY-cL2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZVPS4b2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.0/@mediatorFlow/@children.0/@onAcceptOutputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZVPS4r2PEe-v--tlS-PLQg" points="[11, -3, -17, 0]$[22, 0, -6, 3]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZVcHML2PEe-v--tlS-PLQg" type="4001" source="_ZMBFdb2PEe-v--tlS-PLQg" target="_ZOYc8L2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZVcHMb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.0/@mediatorFlow/@children.0/@onRejectOutputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZVcHMr2PEe-v--tlS-PLQg" points="[11, -3, -17, 0]$[22, 0, -6, 3]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZVkqEL2PEe-v--tlS-PLQg" type="4001" source="_ZH9E1b2PEe-v--tlS-PLQg" target="_ZMAeYL2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZVkqEb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@caseBranches.0/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZVkqEr2PEe-v--tlS-PLQg" points="[11, -8, -5, 0]$[10, -5, -6, 3]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZVrXwL2PEe-v--tlS-PLQg" type="4001" source="_ZPP_pb2PEe-v--tlS-PLQg" target="_ZQR6YL2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZVrXwb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.1/@mediatorFlow/@children.0/@onAcceptOutputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZVrXwr2PEe-v--tlS-PLQg" points="[11, -3, -17, 0]$[22, 0, -6, 3]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZV0hsL2PEe-v--tlS-PLQg" type="4001" source="_ZPQmsL2PEe-v--tlS-PLQg" target="_ZQ4XUL2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZV0hsb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.1/@mediatorFlow/@children.0/@onRejectOutputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZV0hsr2PEe-v--tlS-PLQg" points="[11, -3, -17, 0]$[22, 0, -6, 3]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZV7PYL2PEe-v--tlS-PLQg" type="4001" source="_ZPAvEL2PEe-v--tlS-PLQg" target="_ZPPYkL2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZV7PYb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@caseBranches.1/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZV72cL2PEe-v--tlS-PLQg" points="[-6, -5, 0, 0]$[0, 0, 6, 5]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZWCkIL2PEe-v--tlS-PLQg" type="4001" source="_ZRuE0L2PEe-v--tlS-PLQg" target="_ZSp48L2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZWCkIb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.2/@mediatorFlow/@children.0/@onAcceptOutputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZWCkIr2PEe-v--tlS-PLQg" points="[11, -3, -17, 0]$[22, 0, -6, 3]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZWLuEL2PEe-v--tlS-PLQg" type="4001" source="_ZRuE1b2PEe-v--tlS-PLQg" target="_ZTMEcL2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZWLuEb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.2/@mediatorFlow/@children.0/@onRejectOutputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZWLuEr2PEe-v--tlS-PLQg" points="[11, -3, -17, 0]$[22, 0, -6, 3]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZWWtML2PEe-v--tlS-PLQg" type="4001" source="_ZRc_EL2PEe-v--tlS-PLQg" target="_ZRtdwL2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZWWtMb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@caseBranches.2/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZWWtMr2PEe-v--tlS-PLQg" points="[-6, -5, 0, 0]$[0, 0, 6, 5]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZWhFQL2PEe-v--tlS-PLQg" type="4001" source="_ZErHVb2PEe-v--tlS-PLQg" target="_ZFOg8L2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZWhFQb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZWhFQr2PEe-v--tlS-PLQg" points="[6, 9, 0, -1]$[0, 5, -6, -5]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZWqPML2PEe-v--tlS-PLQg" type="4001" source="_ZFOg9b2PEe-v--tlS-PLQg" target="_ZFm7cL2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZWqPMb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.0/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZWqPMr2PEe-v--tlS-PLQg" points="[-11, 0, 69, 0]$[-74, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZW1OUL2PEe-v--tlS-PLQg" type="4001" source="_ZFnigb2PEe-v--tlS-PLQg" target="_ZGpdQL2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZW1OUb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.1/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZW1OUr2PEe-v--tlS-PLQg" points="[-11, 0, 69, 0]$[-74, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZW9xML2PEe-v--tlS-PLQg" type="4001" source="_ZGpdRb2PEe-v--tlS-PLQg" target="_ZH8dwL2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZW9xMb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.2/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZW-YQL2PEe-v--tlS-PLQg" points="[-11, 0, 69, 0]$[-74, 0, 6, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZXGUEL2PEe-v--tlS-PLQg" type="4001" source="_ZH9E0L2PEe-v--tlS-PLQg" target="_ZErHUL2PEe-v--tlS-PLQg" roundedBendpointsRadius="5" routing="Rectilinear">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZXGUEb2PEe-v--tlS-PLQg" fontName="Segoe UI"/>
+    <element xmi:type="esb:EsbLink" href="postSuccessSeq.esb#//@server/@children.0/@mediatorFlow/@children.3/@outputConnector/@outgoingLink"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZXGUEr2PEe-v--tlS-PLQg" points="[-7, -9, 0, 1]$[0, -1, 7, 9]"/>
+  </edges>
+</notation:Diagram>

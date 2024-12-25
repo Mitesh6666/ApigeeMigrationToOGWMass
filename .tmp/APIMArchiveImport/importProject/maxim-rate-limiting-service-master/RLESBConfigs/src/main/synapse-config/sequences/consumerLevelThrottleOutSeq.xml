@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="consumerLevelThrottleOutSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="custom">
+        <property name="ThrottledOutLog" value="Request was throttled out at consumer level"/>
+    </log>
+    <property name="HTTP_SC" scope="axis2" type="STRING" value="429"/>
+    <payloadFactory media-type="json">
+        <format>{"Response" : "Request Throttled Out at Consumer Level"}</format>
+        <args/>
+    </payloadFactory>
+    <respond/>
+</sequence>

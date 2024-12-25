@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/integrationstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_XwAwELxTEe-KmN-E9OhLhg" type="Esb" name="PreProxyFlow" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_XxIxcLxTEe-KmN-E9OhLhg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_XxJYgLxTEe-KmN-E9OhLhg" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_9k2fMLxcEe-KmN-E9OhLhg" type="3614">
+        <children xmi:type="notation:Node" xmi:id="_9k3GQLxcEe-KmN-E9OhLhg" type="3615">
+          <children xmi:type="notation:DecorationNode" xmi:id="_9k3GRbxcEe-KmN-E9OhLhg" type="7035">
+            <children xmi:type="notation:Node" xmi:id="_9k6woLxcEe-KmN-E9OhLhg" type="3495">
+              <children xmi:type="notation:DecorationNode" xmi:id="_9k6wpbxcEe-KmN-E9OhLhg" type="5168"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_9k6wobxcEe-KmN-E9OhLhg"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_9k6worxcEe-KmN-E9OhLhg" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_9k6wo7xcEe-KmN-E9OhLhg"/>
+              <element xmi:type="esb:LogMediator" href="PreProxyFlow.esb#//@server/@children.0/@mediatorFlow/@children.0"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9k6wpLxcEe-KmN-E9OhLhg" x="94" y="91"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_9lMdcLxcEe-KmN-E9OhLhg" type="3492">
+              <children xmi:type="notation:DecorationNode" xmi:id="_9lMddbxcEe-KmN-E9OhLhg" type="5167"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_9lMdcbxcEe-KmN-E9OhLhg"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_9lMdcrxcEe-KmN-E9OhLhg" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_9lMdc7xcEe-KmN-E9OhLhg"/>
+              <element xmi:type="esb:PropertyMediator" href="PreProxyFlow.esb#//@server/@children.0/@mediatorFlow/@children.1"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9lMddLxcEe-KmN-E9OhLhg" x="94" y="91"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_9lc8ILxcEe-KmN-E9OhLhg" type="3508">
+              <children xmi:type="notation:DecorationNode" xmi:id="_9lc8JbxcEe-KmN-E9OhLhg" type="5175"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_9lc8IbxcEe-KmN-E9OhLhg"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_9lc8IrxcEe-KmN-E9OhLhg" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_9lc8I7xcEe-KmN-E9OhLhg"/>
+              <element xmi:type="esb:ScriptMediator" href="PreProxyFlow.esb#//@server/@children.0/@mediatorFlow/@children.2"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9lc8JLxcEe-KmN-E9OhLhg" x="94" y="91"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_9lpwcLxcEe-KmN-E9OhLhg" type="3495">
+              <children xmi:type="notation:DecorationNode" xmi:id="_9lpwdbxcEe-KmN-E9OhLhg" type="5168"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_9lpwcbxcEe-KmN-E9OhLhg"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_9lpwcrxcEe-KmN-E9OhLhg" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_9lpwc7xcEe-KmN-E9OhLhg"/>
+              <element xmi:type="esb:LogMediator" href="PreProxyFlow.esb#//@server/@children.0/@mediatorFlow/@children.3"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9lpwdLxcEe-KmN-E9OhLhg" x="94" y="91"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_9lyTULxcEe-KmN-E9OhLhg" type="3492">
+              <children xmi:type="notation:DecorationNode" xmi:id="_9ly6YLxcEe-KmN-E9OhLhg" type="5167"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_9lyTUbxcEe-KmN-E9OhLhg"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_9lyTUrxcEe-KmN-E9OhLhg" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_9lyTU7xcEe-KmN-E9OhLhg"/>
+              <element xmi:type="esb:PropertyMediator" href="PreProxyFlow.esb#//@server/@children.0/@mediatorFlow/@children.4"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9lyTVLxcEe-KmN-E9OhLhg" x="94" y="91"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_9l8rYLxcEe-KmN-E9OhLhg" type="3493">
+              <children xmi:type="notation:DecorationNode" xmi:id="_9l8rZbxcEe-KmN-E9OhLhg" type="5128"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_9l8rYbxcEe-KmN-E9OhLhg"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_9l8rYrxcEe-KmN-E9OhLhg" fontName="Segoe UI"/>
+              <styles xmi:type="notation:LineStyle" xmi:id="_9l8rY7xcEe-KmN-E9OhLhg"/>
+              <element xmi:type="esb:ThrottleMediator" href="PreProxyFlow.esb#//@server/@children.0/@mediatorFlow/@children.5"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9l8rZLxcEe-KmN-E9OhLhg" x="94" y="91"/>
+            </children>
+            <styles xmi:type="notation:TitleStyle" xmi:id="_9k3GRrxcEe-KmN-E9OhLhg" showTitle="true"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_9k3GQbxcEe-KmN-E9OhLhg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_9k3GQrxcEe-KmN-E9OhLhg" fontName="Segoe UI"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_9k3GQ7xcEe-KmN-E9OhLhg"/>
+          <element xmi:type="esb:MediatorFlow" href="PreProxyFlow.esb#//@server/@children.0/@mediatorFlow"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9k3GRLxcEe-KmN-E9OhLhg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_9k3GR7xcEe-KmN-E9OhLhg" type="3616">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_9k3GSLxcEe-KmN-E9OhLhg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_9k3GSbxcEe-KmN-E9OhLhg" fontName="Segoe UI"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_9k3GSrxcEe-KmN-E9OhLhg"/>
+          <element xmi:type="esb:SequencesInputConnector" href="PreProxyFlow.esb#//@server/@children.0/@inputConnector"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9k3GS7xcEe-KmN-E9OhLhg" x="-11" y="-9"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_9k3GTLxcEe-KmN-E9OhLhg" type="3617">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_9k3GTbxcEe-KmN-E9OhLhg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_9k3GTrxcEe-KmN-E9OhLhg" fontName="Segoe UI"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_9k3GT7xcEe-KmN-E9OhLhg"/>
+          <element xmi:type="esb:SequencesOutputConnector" href="PreProxyFlow.esb#//@server/@children.0/@outputConnector"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9k3GULxcEe-KmN-E9OhLhg" x="-11" y="-9"/>
+        </children>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_9k2fMbxcEe-KmN-E9OhLhg"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_9k2fMrxcEe-KmN-E9OhLhg" fontName="Segoe UI"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_9k2fM7xcEe-KmN-E9OhLhg"/>
+        <element xmi:type="esb:Sequences" href="PreProxyFlow.esb#//@server/@children.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9k2fNLxcEe-KmN-E9OhLhg" x="3069" y="94"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_XxIxcbxTEe-KmN-E9OhLhg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_XxIxcrxTEe-KmN-E9OhLhg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_XxIxc7xTEe-KmN-E9OhLhg"/>
+    <element xmi:type="esb:EsbServer" href="PreProxyFlow.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XxIxdLxTEe-KmN-E9OhLhg"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_XwAwEbxTEe-KmN-E9OhLhg"/>
+  <element xmi:type="esb:EsbDiagram" href="PreProxyFlow.esb#/"/>
+</notation:Diagram>

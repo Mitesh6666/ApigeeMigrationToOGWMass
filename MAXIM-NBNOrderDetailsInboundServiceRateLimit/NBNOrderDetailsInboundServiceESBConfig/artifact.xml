@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="NBNOrderDetailsInboundServiceAPI" groupId="com.telstra.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/NBNOrderDetailsInboundServiceAPI.xml</file>
+    </artifact>
+    <artifact name="NBNOrderDetailsInboundServiceAPI_swagger" groupId="com.telstra.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/NBNOrderDetailsInboundServiceAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="NBNOrderDetailsInboundServiceAPI_metadata" groupId="com.telstra.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/NBNOrderDetailsInboundServiceAPI_metadata.yaml</file>
+    </artifact>
+    <artifact name="ErrorHandler" groupId="com.telstra.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ErrorHandler.xml</file>
+    </artifact>
+    <artifact name="PostSuccessSequence" groupId="com.telstra.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/PostSuccessSequence.xml</file>
+    </artifact>
+    <artifact name="Sequence" groupId="com.telstra.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/Sequence.xml</file>
+    </artifact>
+</artifacts>

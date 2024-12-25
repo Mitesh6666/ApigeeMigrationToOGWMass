@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/integrationstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_9dipMLxPEe-KmN-E9OhLhg" type="Esb" name="Preflow" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_9hTu4LxPEe-KmN-E9OhLhg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_9hUV8LxPEe-KmN-E9OhLhg" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_95CSYLxPEe-KmN-E9OhLhg" type="3614">
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_95CSYbxPEe-KmN-E9OhLhg"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_95CSYrxPEe-KmN-E9OhLhg" fontName="Segoe UI"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_95CSY7xPEe-KmN-E9OhLhg"/>
+        <element xmi:type="esb:Sequences" href="Preflow.esb#//@server/@children.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_95CSZLxPEe-KmN-E9OhLhg" width="195" height="125"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_9hTu4bxPEe-KmN-E9OhLhg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_9hTu4rxPEe-KmN-E9OhLhg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_9hTu47xPEe-KmN-E9OhLhg"/>
+    <element xmi:type="esb:EsbServer" href="Preflow.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9hTu5LxPEe-KmN-E9OhLhg"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_9dipMbxPEe-KmN-E9OhLhg"/>
+  <element xmi:type="esb:EsbDiagram" href="Preflow.esb#/"/>
+</notation:Diagram>

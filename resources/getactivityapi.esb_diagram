@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/integrationstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_fOIX4LZHEe-KmN-E9OhLhg" type="Esb" name="GetActivityAPI" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_fO4l0bZHEe-KmN-E9OhLhg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_fO4l1rZHEe-KmN-E9OhLhg" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_fSesYLZHEe-KmN-E9OhLhg" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_fSesZbZHEe-KmN-E9OhLhg" type="5003"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_fSesYbZHEe-KmN-E9OhLhg"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_fSesYrZHEe-KmN-E9OhLhg" fontName="Segoe UI"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_fSesY7ZHEe-KmN-E9OhLhg"/>
+        <element xmi:type="esb:ProxyService" href="GetActivityAPI.esb#//@server/@children.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fSesZLZHEe-KmN-E9OhLhg" width="300" height="400"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_fO4l0rZHEe-KmN-E9OhLhg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_fO4l07ZHEe-KmN-E9OhLhg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_fO4l1LZHEe-KmN-E9OhLhg"/>
+    <element xmi:type="esb:EsbServer" href="GetActivityAPI.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fO4l1bZHEe-KmN-E9OhLhg"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_fOIX4bZHEe-KmN-E9OhLhg"/>
+  <element xmi:type="esb:EsbDiagram" href="GetActivityAPI.esb#/"/>
+</notation:Diagram>

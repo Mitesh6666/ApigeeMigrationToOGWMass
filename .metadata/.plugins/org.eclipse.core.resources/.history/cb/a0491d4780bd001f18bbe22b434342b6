@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/transform" name="PTAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <!--  Start Logging  -->
+            <log level="custom">
+                <property name="PTAPIStartLog" value="******* Start Payload Transformation Flow ********"/>
+            </log>
+            <!-- Convert Incoming JSON to XML -->
+            <payloadFactory media-type="xml">
+                <format>
+                    <inline xmlns="http://www.w3.org/2005/98/addressing">
+                        <OrderDetails>
+                            <OrderNumber>$1</OrderNumber>
+                            <CustomerName>$2</CustomerName>
+                            <CustomerID>$3</CustomerID>
+                            <RequestedDate>$4</RequestedDate>
+                        </OrderDetails>
+                    </inline>
+                </format>
+                <args>
+                    <arg evaluator="json" expression="$.OrderNumber"/>
+                    <arg evaluator="json" expression="$.CustomerName"/>
+                    <arg evaluator="json" expression="$.CustomerID"/>
+                    <arg evaluator="json" expression="$.RequestedDate"/>
+                </args>
+            </payloadFactory>
+            <property name="messageType" scope="axis2" type="STRING" value="text/xml"/>
+            <xslt description="AddNamespace.xslt" key="conf:/AddNamespaces.xslt"/>
+            <property expression="get-property('env','southbound-EP)" name="uri.var.southboundEndpoint" scope="default" type="STRING"/>
+            <log level="custom"/>
+            <call>
+                <endpoint key="southboundEP"/>
+            </call>
+            <xslt description="RemoveNamespaces.xslt" key="conf:/remove-namespaces.xslt"/>
+            <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

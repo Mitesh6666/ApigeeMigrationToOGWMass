@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="PostSuccessSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="custom">
+        <property name="PostSuccessSeqStartLog" value="Request Wasn't Spike Arrested...Post Sequence started......"/>
+    </log>
+    <property description="Get JWT Header" expression="$trpx-okapi-request-context" name="ConsumeHeader" scope="default" type="STRING"/>
+    <class name="com.telstraJWTDecoder"/>
+    <switch source="get-property(&quot;ConsumerName&quot;)">
+        <case regex="Case1-ACT-BFF">
+            <throttle id="">
+                <onReject/>
+                <onAccept/>
+            </throttle>
+        </case>
+        <default>
+            <throttle id="">
+                <onReject/>
+                <onAccept/>
+            </throttle>
+        </default>
+    </switch>
+</sequence>

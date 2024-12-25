@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="failedPostSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <payloadFactory media-type="json">
+        <format>{"Response" : "Spike Arrest occurred"}</format>
+        <args/>
+    </payloadFactory>
+    <respond/>
+</sequence>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="MaximNBNOrderDetailInboundService" groupId="com.telstra.com.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/MaximNBNOrderDetailInboundService.xml</file>
+    </artifact>
+    <artifact name="MaximNBNOrderDetailInboundService_swagger" groupId="com.telstra.com.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/MaximNBNOrderDetailInboundService_swagger.yaml</file>
+    </artifact>
+    <artifact name="MaximNBNOrderDetailInboundService_metadata" groupId="com.telstra.com.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/MaximNBNOrderDetailInboundService_metadata.yaml</file>
+    </artifact>
+    <artifact name="Maxim-TargetEndpoint" groupId="com.telstra.com.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/Maxim-TargetEndpoint.xml</file>
+    </artifact>
+</artifacts>

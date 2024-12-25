@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="consumerLevelPostSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="custom">
+        <property name="ConsumerLevelPostSeqStartLog" value="Request was not throttled out at consumer level..Consumer Level Post Sequence Started"/>
+    </log>
+    <property expression="get-property('env','payloadTransformation-EP')" name="uri.var.EP" scope="default" type="STRING"/>
+    <call>
+        <endpoint key="PayloadTransformationEP"/>
+    </call>
+    <respond/>
+</sequence>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="postSuccessSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="custom">
+        <property name="postSuccessSeqStartLog" value="Request was not spike arrested..post success sequence started..."/>
+    </log>
+    <property description="get JWT Header" expression="$trp:x-okapi-request-context" name="ConsumerHeader" scope="default" type="STRING"/>
+    <class name="com.telstra.JWTDecoder"/>
+    <switch source="get-property('consumerName')">
+        <case regex="maas-ogw-test-1">
+            <throttle id="consumer1">
+                <policy>
+                    <wsp:Policy wsu:id="WSO2MediatorThrottlingPolicy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                        <throttle:MediatorThrottleAssertion xmlns:throttle="http://www.wso2.org/products/wso2commons/throttle">
+                            <throttle:MaximumConcurrentAccess>0</throttle:MaximumConcurrentAccess>
+                            <wsp:Policy>
+                                <throttle:ID throttle:type="IP">other</throttle:ID>
+                                <wsp:Policy>
+                                    <throttle:Control>
+                                        <wsp:Policy>
+                                            <throttle:MaximumCount>5</throttle:MaximumCount>
+                                            <throttle:UnitTime>60000</throttle:UnitTime>
+                                            <throttle:ProhibitTimePeriod>0</throttle:ProhibitTimePeriod>
+                                        </wsp:Policy>
+                                    </throttle:Control>
+                                </wsp:Policy>
+                            </wsp:Policy>
+                        </throttle:MediatorThrottleAssertion>
+                    </wsp:Policy>
+                </policy>
+                <onReject>
+                    <sequence key="consumerLevelThrottleOutSeq"/>
+                </onReject>
+                <onAccept>
+                    <sequence key="consumerLevelPostSeq"/>
+                </onAccept>
+            </throttle>
+        </case>
+        <case regex="consumer2">
+            <throttle id="consumer2">
+                <policy>
+                    <wsp:Policy wsu:id="WSO2MediatorThrottlingPolicy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                        <throttle:MediatorThrottleAssertion xmlns:throttle="http://www.wso2.org/products/wso2commons/throttle">
+                            <throttle:MaximumConcurrentAccess>0</throttle:MaximumConcurrentAccess>
+                            <wsp:Policy>
+                                <throttle:ID throttle:type="IP">other</throttle:ID>
+                                <wsp:Policy>
+                                    <throttle:Control>
+                                        <wsp:Policy>
+                                            <throttle:MaximumCount>5</throttle:MaximumCount>
+                                            <throttle:UnitTime>60000</throttle:UnitTime>
+                                            <throttle:ProhibitTimePeriod>0</throttle:ProhibitTimePeriod>
+                                        </wsp:Policy>
+                                    </throttle:Control>
+                                </wsp:Policy>
+                            </wsp:Policy>
+                        </throttle:MediatorThrottleAssertion>
+                    </wsp:Policy>
+                </policy>
+                <onReject>
+                    <sequence key="consumerLevelThrottleOutSeq"/>
+                </onReject>
+                <onAccept>
+                    <sequence key="consumerLevelPostSeq"/>
+                </onAccept>
+            </throttle>
+        </case>
+        <case regex="consumer3">
+            <throttle id="consumer3">
+                <policy>
+                    <wsp:Policy wsu:id="WSO2MediatorThrottlingPolicy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                        <throttle:MediatorThrottleAssertion xmlns:throttle="http://www.wso2.org/products/wso2commons/throttle">
+                            <throttle:MaximumConcurrentAccess>0</throttle:MaximumConcurrentAccess>
+                            <wsp:Policy>
+                                <throttle:ID throttle:type="IP">other</throttle:ID>
+                                <wsp:Policy>
+                                    <throttle:Control>
+                                        <wsp:Policy>
+                                            <throttle:MaximumCount>10</throttle:MaximumCount>
+                                            <throttle:UnitTime>60000</throttle:UnitTime>
+                                            <throttle:ProhibitTimePeriod>0</throttle:ProhibitTimePeriod>
+                                        </wsp:Policy>
+                                    </throttle:Control>
+                                </wsp:Policy>
+                            </wsp:Policy>
+                        </throttle:MediatorThrottleAssertion>
+                    </wsp:Policy>
+                </policy>
+                <onReject>
+                    <sequence key="consumerLevelThrottleOutSeq"/>
+                </onReject>
+                <onAccept>
+                    <sequence key="consumerLevelPostSeq"/>
+                </onAccept>
+            </throttle>
+        </case>
+        <default>
+            <log level="custom">
+                <property name="NotAKnownConsumerErrorLog" value="Not a Known Consumer...Hence Rejecting"/>
+            </log>
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Not a known consumer"}</format>
+                <args/>
+            </payloadFactory>
+            <respond/>
+        </default>
+    </switch>
+</sequence>

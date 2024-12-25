@@ -1,0 +1,17 @@
+serviceName: maximpayloadtransformation
+serviceVersion: "1.0.0"
+wso2miVersion: "4.1.0"
+staging:
+  ingress:
+    okapi: true
+    direct: true
+  envVars:
+    - name: southbound-EP
+      value: http://demo6007066.mockable.io/ep2
+production:
+  ingress:
+    okapi: true
+    direct: true
+  envVars:
+    - name: southbound-EP
+      value: http://demo6007066.mockable.io/ep2

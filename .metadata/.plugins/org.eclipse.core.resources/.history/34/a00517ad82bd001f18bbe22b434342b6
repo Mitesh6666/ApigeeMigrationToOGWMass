@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/transform" name="PTAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <!--  Start Logging  -->
+            <log level="custom">
+                <property name="PTAPIStartLog" value="******* Start Payload Transformation Flow ********"/>
+            </log>
+            <!-- Convert Incoming JSON to XML -->
+            <payloadFactory media-type="xml">
+                <format>
+                    <inline xmlns="http://www.w3.org/2005/98/addressing">
+                        <OrderDetails>
+                            <OrderNumber>$1</OrderNumber>
+                            <CustomerName>$2</CustomerName>
+                            <CustomerID>$3</CustomerID>
+                            <RequestedDate>$4</RequestedDate>
+                        </OrderDetails>
+                    </inline>
+                </format>
+                <args>
+                    <arg evaluator="json" expression="$.OrderNumber"/>
+                    <arg evaluator="json" expression="$.CustomerName"/>
+                    <arg evaluator="json" expression="$.CustomerID"/>
+                    <arg evaluator="json" expression="$.RequestedDate"/>
+                </args>
+            </payloadFactory>
+            <!-- Add Namespaces to XML -->
+            <xslt description="AddNamespace.xslt" key="conf:/AddNamespaces.xslt"/>
+            <!-- Log Transformed Payload -->
+            <log level="custom">
+                <property name="Transformed XML" value="*******  Transformed Payload ********"/>
+            </log>
+            <!-- Set Backend Endpoint URL -->
+            <property description="BackendEndpointURL" name="uri.var.southboundEndpoint" scope="default" type="STRING" value="https://maxim-okapi.in.telstra.com.au/eai_okapiorder_enu/start.swe?SWEExtSource=WebService&amp;SWEExtCmd=Execute&amp;WSSOAP=1"/>
+            <!-- Call Target System -->
+            <call/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

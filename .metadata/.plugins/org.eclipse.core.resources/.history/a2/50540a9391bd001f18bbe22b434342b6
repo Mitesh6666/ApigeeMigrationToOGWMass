@@ -1,0 +1,25 @@
+serviceName: maximratelimit
+serviceVersion: '1.0.0'
+wso2miVersion: '4.1.0'
+staging:
+  ingress:
+    okapi: true
+    direct: true
+  envVars:
+    - 
+      name: customAttributeArr
+      value: cutomAttribute1,cutomAttribute2,cutomAttribute3,cutomAttribute4
+    - name : payloadTransformation-EP
+      value : http://maximpayloadtransformation.tenant-35:8290/transform
+production:
+  ingress:
+    okapi: true
+    direct: true
+  envVars:
+    - 
+      name: customAttributeArr
+      value: cutomAttribute1,cutomAttribute2,cutomAttribute3,cutomAttribute4
+    - name : payloadTransformation-EP
+      value : http://maximpayloadtransformation.tenant-35:8290/transform
+
+

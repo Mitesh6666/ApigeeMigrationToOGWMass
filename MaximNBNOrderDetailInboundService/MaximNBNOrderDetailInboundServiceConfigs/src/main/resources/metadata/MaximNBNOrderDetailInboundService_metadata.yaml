@@ -1,0 +1,11 @@
+---
+key: "MaximNBNOrderDetailInboundService-1.0.0"
+name : "MaximNBNOrderDetailInboundService"
+displayName : "MaximNBNOrderDetailInboundService"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/application/maxim/v1/order-details"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

@@ -1,0 +1,11 @@
+---
+key: "HelloWorldAPI-1.0.0"
+name : "HelloWorldAPI"
+displayName : "HelloWorldAPI"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/hello"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

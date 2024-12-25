@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: getactivityapi
+  description: API Definition of getactivityapi
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/ratelimit
+paths:
+  /:
+    get:
+      responses:
+        default:
+          description: Default response

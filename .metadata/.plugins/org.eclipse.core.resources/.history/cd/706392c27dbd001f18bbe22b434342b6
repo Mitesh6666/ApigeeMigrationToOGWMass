@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/transform" name="PTAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <!--  Start Logging  -->
+            <log level="custom">
+                <property name="PTAPIStartLog" value="******* Start Payload Transformation Flow ********"/>
+            </log>
+            <property name="messageType" scope="axis2" type="STRING" value="text/xml"/>
+            <xslt description="AddNamespace.xslt" key="conf:/AddNamespaces.xslt"/>
+            <property expression="get-property('env','southbound-EP)" name="uri.var.southboundEndpoint" scope="default" type="STRING"/>
+            <log level="custom"/>
+            <call>
+                <endpoint key="southboundEP"/>
+            </call>
+            <xslt description="RemoveNamespaces.xslt" key="conf:/remove-namespaces.xslt"/>
+            <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

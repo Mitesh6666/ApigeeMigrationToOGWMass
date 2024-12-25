@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="PTAPI" groupId="com.telstra.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/PTAPI.xml</file>
+    </artifact>
+    <artifact name="PTAPI_swagger" groupId="com.telstra.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PTAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="PTAPI_metadata" groupId="com.telstra.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PTAPI_metadata.yaml</file>
+    </artifact>
+    <artifact name="southboundEP" groupId="com.telstra.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/southboundEP.xml</file>
+    </artifact>
+</artifacts>
